@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#2b1055), to(#7597de));
+  background: linear-gradient(#2b1055, #7597de);
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  z-index: 100000;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav ul li {
+  margin-left: 2em;
+  list-style-type: none;
+}
+
+.nav ul li a {
+  color: #fff;
+  font-weight: 600;
+  border-radius: 20px;
+  padding: 6px 15px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  letter-spacing: 2px;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+  color: #000;
+  background: #fff;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#1c0522), to(transparent));
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 10;
+}
+
+section img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+
+#moon {
+  mix-blend-mode: screen;
+}
+
+#mountains_front {
+  pointer-events: none;
+  z-index: 10;
+}
+
+.text {
+  color: #fff;
+  font-size: 6vw;
+  font-weight: 900;
+  z-index: 9;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+  position: absolute;
+  right: -200px;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #000;
+  display: inline-block;
+  position: absolute;
+  font-weight: 600;
+  background: white;
+  padding: 6px 20px;
+  border-radius: 40px;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 1px solid black;
+  color: #fff;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.lower_section {
+  background: #1c0522;
+  padding: 50px 100px;
+}
+
+.lower_section h1 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.lower_section p {
+  font-size: 1em;
+  color: #e2d2d2;
+}
+
+.lower_section span {
+  color: #fff;
+  font-size: 2em;
+}
+/*# sourceMappingURL=style.css.map */
